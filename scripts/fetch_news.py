@@ -31,7 +31,7 @@ PRICE_LOG = ROOT / "data" / "price_log.csv"
 
 # 使用モデル。最新の推奨モデルは https://docs.claude.com を参照して
 # 必要なら差し替えてください。
-   MODEL = "claude-sonnet-5"
+MODEL = "claude-sonnet-5"
 
 CATEGORIES = ["相場", "設備投資", "イベント", "地政学", "サステナビリティ"]
 
