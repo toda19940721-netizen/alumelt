@@ -22,13 +22,12 @@
   {
     "category": "相場",
     "date": "2026-09-23",
-    "title_ex": null,
-    "title_ja": "アルミ先物、中東供給不安で3290ドルに反発",
-    "summary_ja": "英LMEのアルミニウム先物が1トン=3290ドルまで上昇し、2週間ぶり安値からの反発を強めた。中東情勢によるガルフ地域の供給減とドル高が相場を支えている。",
-    "comment_ja": "GCC地域の生産減少とLME在庫の低水準が続く限り、当面はプレミアム含め高値圏での調達が続くと考えられる。",
+    "title_ja": "LMEアルミ、供給逼迫で3290ドルまで反発",
+    "summary_ja": "英国のアルミニウム先物は1トン=3290ドルまで上昇し、2週間ぶりの安値から反発した。中東情勢による供給混乱とタイトな需給環境が価格を下支えしている。",
+    "comment_ja": "中東発の供給不安が長期化する場合、調達コストの上振れリスクを織り込んだヘッジ戦略の再点検が必要と考えられる。",
     "source_name": "Trading Economics",
     "source_url": "https://tradingeconomics.com/commodity/aluminum",
-    "fetched_at": "2026-09-25T05:09:44.060943+00:00"
+    "fetched_at": "2026-09-25T06:33:14.142095+00:00"
   },
   {
     "category": "設備投資",
@@ -39,6 +38,16 @@
     "source_name": "Investing.com",
     "source_url": "https://jp.investing.com/news/company-news/article-93CH-1687311",
     "fetched_at": "2026-09-25T05:09:44.060959+00:00"
+  },
+  {
+    "category": "地政学",
+    "date": "2026-09-22",
+    "title_ja": "中東戦争長期化でアルミ供給不安、日本にも波及",
+    "summary_ja": "イラン戦争の長期化により湾岸産アルミニウムの供給が不安定化している。ホルムズ海峡の事実上の封鎖と製錬所への報復攻撃で生産・輸送が滞り、湾岸からの輸入に頼る日本も厳しい状況に直面している。",
+    "comment_ja": "湾岸依存度の高い調達先を持つ企業は、代替調達先の分散化を急ぐ必要があると考えられる。",
+    "source_name": "Wedge ONLINE",
+    "source_url": "https://wedge.ismedia.jp/articles/-/40533?layout=b",
+    "fetched_at": "2026-09-25T06:33:14.142116+00:00"
   },
   {
     "category": "地政学",
@@ -54,11 +63,11 @@
     "category": "サステナビリティ",
     "date": "2026-09-11",
     "title_ja": "EU、アルミスクラップ輸出関税案を撤回",
-    "summary_ja": "欧州委員会は印EU自由貿易協定の署名を複雑にする懸念から、検討していたアルミスクラップの輸出関税案を撤回した。関税に代わり、非OECD諸国向け廃棄物輸出を制限する規則の活用を進める方針。",
-    "comment_ja": "関税撤回によりアジア向けスクラップ流出圧力は残るとみられ、欧州製二次地金の調達コストや量への影響を注意したい。",
-    "source_name": "MINING.COM",
+    "summary_ja": "欧州連合は、対インドFTA署名への悪影響を懸念し、アルミニウムスクラップへの輸出関税導入案を撤回した。欧州の製錬業保護と持続可能性目標を目的としていた措置だが、代わりに環境規則で輸出を抑制する方針に転換した。",
+    "comment_ja": "欧州発の再生地金フィードストック規制が当面見送られたことで、スクラップ調達コストの急騰リスクは後退したと考えられる。",
+    "source_name": "MINING.COM (Reuters)",
     "source_url": "https://www.mining.com/web/eu-dropped-aluminium-scrap-duty-plan-over-india-concerns-sources-say",
-    "fetched_at": "2026-09-25T05:09:44.060966+00:00"
+    "fetched_at": "2026-09-25T06:33:14.142118+00:00"
   },
   {
     "category": "相場",
@@ -81,6 +90,16 @@
     "fetched_at": "2026-09-25T00:00:00+00:00"
   },
   {
+    "category": "設備投資",
+    "date": "2026-08-13",
+    "title_ja": "リオティントがトマゴ製錬所に11億豪ドル投資",
+    "summary_ja": "リオティントが豪州最大のアルミ製錬所トマゴの電力供給を2038年まで確保する契約を発表。10年間の電力購入契約と併せ、2038年までに11億豪ドル（うち脱炭素向け1億豪ドル）を投資する。",
+    "comment_ja": "豪州二大製錬所の電力確保が完了したことで、同国からの長期安定調達の信頼性向上が期待できると考えられる。",
+    "source_name": "Rio Tinto",
+    "source_url": "https://www.riotinto.com/en/news/releases/2026/rio-tinto-welcomes-agreement-to-secure-long-term-future-of-tomago-aluminium",
+    "fetched_at": "2026-09-25T06:33:14.142111+00:00"
+  },
+  {
     "category": "サステナビリティ",
     "date": "2026-07-12",
     "title_ja": "欧州でリサイクル能力40万トン増設、年間需要800万トンが土台に",
@@ -99,5 +118,15 @@
     "source_name": "Aluminium International Today",
     "source_url": "https://aluminiumtoday.com/news/p8",
     "fetched_at": "2026-09-25T00:00:00+00:00"
+  },
+  {
+    "category": "イベント",
+    "date": null,
+    "title_ja": "ファストマーケッツ「国際アルミニウム会議」リヤド開催へ",
+    "summary_ja": "業界メディア大手ファストマーケッツが主催する「Fastmarkets International Aluminium」の次回会合を、サウジアラビアの製錬大手マーデンとの提携によりリヤドで開催すると発表した。",
+    "comment_ja": "中東の生産・投資拠点としての存在感が高まる中、現地イベントは最新の供給動向を把握する好機になると考えられる。",
+    "source_name": "Aluminium International Today",
+    "source_url": "https://aluminiumtoday.com/",
+    "fetched_at": "2026-09-25T06:33:14.142114+00:00"
   }
 ]
