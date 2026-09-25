@@ -21,14 +21,33 @@
   },
   {
     "category": "相場",
-    "date": "2026-09-24",
-    "title_ext": null,
-    "title_ja": "アルミ価格、中東供給不安で高止まり継続",
-    "summary_ja": "LMEアルミニウム先物は2026年9月24日にトン当たり3,256ドル前後で推移し、中東情勢による供給懸念が価格を下支えしている。湾岸協力会議(GCC)加盟国の生産は7月に前年比44%減少し、LME在庫は36年ぶりの低水準付近で推移している。",
-    "comment_ja": "在庫逼迫と地政学リスクが併存する局面であり、調達契約の価格改定タイミングには注意したい。",
+    "date": "2026-09-23",
+    "title_ja": "アルミ地金、供給逼迫で3,290ドル台に反発",
+    "summary_ja": "<cite index=\"51-5,51-6\">LME3か月物アルミニウム先物は1トン=3,290ドルまで上昇し、2週間安値からの反発を強めた。中東情勢の影響で域内生産が前年比44%減となっている。</cite><cite index=\"51-8\">LME在庫は36年ぶりの低水準付近にとどまり、上海先物(SHFE)の在庫も減少を続け、現物需給の逼迫を示している。</cite>一方で米ドル高が上値を抑える要因となっている。",
+    "comment_ja": "在庫逼迫と地政学リスクが併存する局面であり、調達担当者は先物カーブとプレミアム動向を注視したい。",
     "source_name": "Trading Economics",
     "source_url": "https://tradingeconomics.com/commodity/aluminum",
-    "fetched_at": "2026-09-25T06:56:18.012409+00:00"
+    "fetched_at": "2026-09-25T07:30:15.044190+00:00"
+  },
+  {
+    "category": "地政学",
+    "date": "2026-09-23",
+    "title_ja": "米商務省、アルミ缶用素材を関税対象から一部除外",
+    "summary_ja": "<cite index=\"68-1\">米商務省は2026年9月23日、一般合金アルミシートに課されていた関税の対象からアルミ缶用素材(can stock)を除外する最終決定を公表した。</cite><cite index=\"68-3,68-6\">ただし除外対象は厳格に規定されており、飲料缶の胴体・蓋・タブ用の板厚範囲や特定の調質基準を満たす場合に限られる。</cite>",
+    "comment_ja": "適用要件は非常に細かく規定されており、該当性の誤判定は追加関税リスクにつながる点に注意したい。",
+    "source_name": "Discovery Alert",
+    "source_url": "https://discoveryalert.com/analysis/us-aluminium-can-stock-duties-revoked-september-2026/",
+    "fetched_at": "2026-09-25T07:30:15.044212+00:00"
+  },
+  {
+    "category": "サステナビリティ",
+    "date": "2026-09-23",
+    "title_ja": "米国、年間10億ドル相当のアルミ缶を埋立廃棄と報告",
+    "summary_ja": "<cite index=\"41-1\">米国では輸入依存が続く一方で、年間10億ドル相当のアルミ缶が埋立処分されているとの報告が公表された。</cite><cite index=\"41-2,41-4\">AI廃棄物解析企業グレイパロットによれば、この廃棄量は年間約1,100万メガワット時のエネルギー損失に相当し、選別ライン到達分の89%は本来回収可能とされる。</cite>",
+    "comment_ja": "国内スクラップ回収の高度化は、輸入プレミアム上昇局面での地金調達コスト低減策として実務上注目に値すると考えられる。",
+    "source_name": "AL Circle",
+    "source_url": "https://www.alcircle.com/news/us-aluminium-landfill-loss-can-become-domestic-supply-opportunity-says-waste-intelligence-firm-121292",
+    "fetched_at": "2026-09-25T07:30:15.044213+00:00"
   },
   {
     "category": "設備投資",
@@ -51,6 +70,16 @@
     "fetched_at": "2026-09-25T06:33:14.142116+00:00"
   },
   {
+    "category": "イベント",
+    "date": "2026-09-22",
+    "title_ja": "国際アルミニウム協会、NYC気候週間でリサイクル促進イベント開催",
+    "summary_ja": "<cite index=\"40-6,40-7\">国際アルミニウム協会(IAI)は2026年9月22日、ニューヨークで開催された気候週間(Climate Week NYC)にて、飲料缶バリューチェーン各社と共にリサイクル促進イベントを共催した。</cite><cite index=\"40-8\">同イベントはリサイクルを環境課題としてだけでなく事業機会として位置づけ、投資・技術革新・業界連携による成長戦略を議論した。</cite>",
+    "comment_ja": "再生地金の供給拡大は輸入プレミアム上昇局面でのコスト分散策として実務的に有効と考えられる。",
+    "source_name": "International Aluminium Institute",
+    "source_url": "https://international-aluminium.org/iai-at-climate-week-nyc-2026-the-business-case-for-recycling/",
+    "fetched_at": "2026-09-25T07:30:15.044209+00:00"
+  },
+  {
     "category": "地政学",
     "date": "2026-09-18",
     "title_ja": "米オクラホマ製錬所計画、地元自治体が建設凍結延長",
@@ -59,6 +88,16 @@
     "source_name": "Reuters (via MINING.COM)",
     "source_url": "https://www.mining.com/web/whats-next-for-trumps-aluminum-smelter-project-in-oklahoma/",
     "fetched_at": "2026-09-25T06:56:18.012423+00:00"
+  },
+  {
+    "category": "設備投資",
+    "date": "2026-09-17",
+    "title_ja": "北米でアルミ製錬・アルミナ新増設プロジェクトが加速",
+    "summary_ja": "<cite index=\"27-1,27-2\">センチュリー・アルミナムとEGAが共同開発するオクラホマ州イノーラの新製錬所は年産75万トン規模で、総投資額は約40億ドルとされる。</cite><cite index=\"27-7,27-9\">カナダではリオティントがケベック州のAP60製錬所拡張を進め、追加で年間約16万トンの一次アルミ生産能力を積み増す計画。</cite><cite index=\"27-11\">米政府はルイジアナ州グラマーシーのアルミナ精錬所再稼働に4.5億ドルを拠出する方針。</cite>",
+    "comment_ja": "新設・再稼働が相次ぐが商業生産開始は数年先が多く、当面の需給逼迫緩和には直結しないと考えられる。",
+    "source_name": "ScrapMonster",
+    "source_url": "https://www.scrapmonster.com/news/aluminum/north-american-aluminium-industry-expands-capacity-in-2026-2026-9-17/100041",
+    "fetched_at": "2026-09-25T07:30:15.044206+00:00"
   },
   {
     "category": "地政学",
