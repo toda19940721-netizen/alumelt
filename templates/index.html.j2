@@ -43,26 +43,36 @@
   nav.cats a { text-decoration:none; color: var(--ink-soft); white-space:nowrap; }
   nav.cats a:hover { color: var(--bronze); }
 
-  .lead { padding:52px 0 36px; display:grid; grid-template-columns:1.35fr 1fr; gap:40px; align-items:center; border-bottom:1px solid var(--rule); }
-  .lead .meta-row { display:flex; align-items:center; gap:12px; margin-bottom:16px; }
+  .hero-photo { position:relative; min-height:440px; display:flex; align-items:flex-end; overflow:hidden; border-bottom:1px solid var(--rule); }
+  .hero-img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+  .hero-overlay { position:absolute; inset:0; background:linear-gradient(180deg, rgba(18,23,30,0) 0%, rgba(18,23,30,.25) 45%, rgba(18,23,30,.94) 100%); }
+  .hero-content { position:relative; z-index:1; padding:60px 24px 38px; color:var(--masthead-ink); width:100%; }
+  .hero-content .meta-row { display:flex; align-items:center; gap:12px; margin-bottom:16px; }
   .badge { display:inline-block; font-family:'Zen Kaku Gothic New',sans-serif; font-size:.72rem; font-weight:700; padding:4px 10px; background:var(--bronze); color:#FBF7EF; letter-spacing:.02em; }
   .badge.steel { background: var(--steel); }
-  .lead-date { font-family:'Zen Kaku Gothic New',sans-serif; font-size:.8rem; color:var(--ink-soft); }
-  h1.lead-headline { font-size:clamp(1.7rem,3.6vw,2.5rem); line-height:1.5; font-weight:900; margin:0 0 16px; letter-spacing:.01em; }
-  .lead-deck { color:var(--ink-soft); font-size:1rem; margin:0 0 10px; max-width:46ch; }
-  .lead-comment { font-family:'Zen Kaku Gothic New',sans-serif; font-size:.86rem; color:var(--bronze-deep); margin:0 0 18px; padding-left:12px; border-left:2px solid var(--brass); }
-  .lead-source { font-family:'Zen Kaku Gothic New',sans-serif; font-size:.82rem; text-decoration:none; color:var(--steel); border-bottom:1px solid var(--steel-soft); padding-bottom:2px; }
+  .lead-date { font-family:'Zen Kaku Gothic New',sans-serif; font-size:.8rem; color:#C7C2B6; }
+  h1.lead-headline { font-size:clamp(1.7rem,3.6vw,2.6rem); line-height:1.5; font-weight:900; margin:0 0 16px; letter-spacing:.01em; max-width:22ch; }
+  .lead-deck { color:#D8D3C6; font-size:1rem; margin:0 0 10px; max-width:46ch; }
+  .lead-comment { font-family:'Zen Kaku Gothic New',sans-serif; font-size:.86rem; color:var(--brass); margin:0 0 18px; padding-left:12px; border-left:2px solid var(--brass); max-width:46ch; }
+  .lead-source { font-family:'Zen Kaku Gothic New',sans-serif; font-size:.82rem; text-decoration:none; color:var(--masthead-ink); border-bottom:1px solid #8A8578; padding-bottom:2px; }
 
-  .market-panel { margin:34px 0 0; border:1px solid var(--rule-strong); background:var(--paper); display:grid; grid-template-columns:repeat(3,1fr); }
+  .market-panel { margin:0; border:1px solid var(--rule-strong); border-top:none; background:var(--paper); display:grid; grid-template-columns:repeat(3,1fr); }
   .market-panel .cell { padding:18px 22px; border-right:1px solid var(--rule); }
   .market-panel .cell:last-child { border-right:none; }
   .market-panel .cell-label { font-family:'Zen Kaku Gothic New',sans-serif; font-size:.72rem; color:var(--ink-soft); margin-bottom:8px; }
   .market-panel .cell-value { font-family:'Zen Kaku Gothic New',sans-serif; font-size:1.3rem; font-weight:700; }
   .market-panel .cell-sub { font-family:'Zen Kaku Gothic New',sans-serif; font-size:.76rem; color:var(--bronze); margin-top:4px; }
-  .sparkline { margin-top:14px; }
+  .market-panel .spark-row { grid-column: 1 / -1; border-top:1px solid var(--rule); }
+  .sparkline { display:block; padding:14px 22px 18px; }
+  @media (max-width:640px) { .market-panel .spark-row { border-top:none; } }
 
-  @media (max-width:720px) { .lead { grid-template-columns:1fr; padding-top:36px; } }
-  @media (max-width:640px) { .market-panel { grid-template-columns:1fr; } .market-panel .cell { border-right:none; border-bottom:1px solid var(--rule); } .market-panel .cell:last-child { border-bottom:none; } }
+  @media (max-width:640px) {
+    .hero-photo { min-height:360px; }
+    .hero-content { padding:40px 24px 28px; }
+    .market-panel { grid-template-columns:1fr; }
+    .market-panel .cell { border-right:none; border-bottom:1px solid var(--rule); }
+    .market-panel .cell:last-child { border-bottom:none; }
+  }
 
   .section-head { padding:44px 0 6px; font-family:'Zen Kaku Gothic New',sans-serif; font-size:.9rem; font-weight:700; border-bottom:2px solid var(--ink); display:inline-block; }
   .grid-wrap { padding-bottom:20px; }
@@ -95,7 +105,7 @@
 <div class="masthead">
   <div class="wrap">
     <div class="masthead-inner">
-      <div class="wordmark">アルミ<span>メイト</span></div>
+      <div class="wordmark">アルミ<span>メルト</span></div>
       <div class="masthead-meta">
         <div class="vol">Vol. {{ volume }}</div>
         <div>{{ generated_date }} 更新</div>
@@ -113,8 +123,10 @@
 </nav>
 
 {% if lead %}
-<section class="lead wrap" id="lead">
-  <div>
+<section class="hero-photo" id="lead">
+  <img class="hero-img" src="assets/img/hero-extrusion-billet.jpg" alt="押出プレスから出るアルミニウムの押出材">
+  <div class="hero-overlay"></div>
+  <div class="hero-content wrap">
     <div class="meta-row">
       <span class="badge {{ 'steel' if lead.category in ['相場','地政学'] else '' }}">{{ lead.category }}</span>
       <span class="lead-date">{{ lead.date or '日付不明' }}</span>
@@ -124,35 +136,37 @@
     {% if lead.comment_ja %}<p class="lead-comment">{{ lead.comment_ja }}</p>{% endif %}
     <a class="lead-source" href="{{ lead.source_url }}" target="_blank" rel="noopener">元記事({{ lead.source_name }})を読む</a>
   </div>
-  <div>
-    {% if price_points and price_points|length > 0 %}
-    <div class="market-panel">
-      <div class="cell">
-        <div class="cell-label sans">LME 現物(cash bid)</div>
-        <div class="cell-value">${{ '{:,.1f}'.format(price_points[-1][1]) }}<span style="font-size:.75rem;font-weight:500;"> /t</span></div>
-        {% if price_delta is not none %}
-        <div class="cell-sub">前回比 {{ '+' if price_delta >= 0 else '' }}{{ '%.1f'|format(price_delta) }}%</div>
-        {% endif %}
-      </div>
-      <div class="cell">
-        <div class="cell-label sans">記録日</div>
-        <div class="cell-value" style="font-size:1rem;">{{ price_points[-1][0] }}</div>
-        <div class="cell-sub sans" style="color:var(--ink-soft);">出典: AL Circle ほか</div>
-      </div>
-      <div class="cell">
-        <div class="cell-label sans">記録件数</div>
-        <div class="cell-value" style="font-size:1rem;">{{ price_points|length }} 件</div>
-        <div class="cell-sub sans" style="color:var(--ink-soft);">継続ログ中</div>
-      </div>
+</section>
+{% if price_points and price_points|length > 0 %}
+<div class="wrap">
+  <div class="market-panel">
+    <div class="cell">
+      <div class="cell-label sans">LME 現物(cash bid)</div>
+      <div class="cell-value">${{ '{:,.1f}'.format(price_points[-1][1]) }}<span style="font-size:.75rem;font-weight:500;"> /t</span></div>
+      {% if price_delta is not none %}
+      <div class="cell-sub">前回比 {{ '+' if price_delta >= 0 else '' }}{{ '%.1f'|format(price_delta) }}%</div>
+      {% endif %}
+    </div>
+    <div class="cell">
+      <div class="cell-label sans">記録日</div>
+      <div class="cell-value" style="font-size:1rem;">{{ price_points[-1][0] }}</div>
+      <div class="cell-sub sans" style="color:var(--ink-soft);">出典: AL Circle ほか</div>
+    </div>
+    <div class="cell">
+      <div class="cell-label sans">記録件数</div>
+      <div class="cell-value" style="font-size:1rem;">{{ price_points|length }} 件</div>
+      <div class="cell-sub sans" style="color:var(--ink-soft);">継続ログ中</div>
     </div>
     {% if sparkline_points %}
-    <svg class="sparkline" viewBox="0 0 300 60" width="100%" height="60" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="LMEアルミ価格の推移">
-      <polyline points="{{ sparkline_points }}" fill="none" stroke="var(--steel)" stroke-width="2"/>
-    </svg>
-    {% endif %}
+    <div class="spark-row">
+      <svg class="sparkline" viewBox="0 0 300 60" width="100%" height="60" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="LMEアルミ価格の推移">
+        <polyline points="{{ sparkline_points }}" fill="none" stroke="var(--steel)" stroke-width="2"/>
+      </svg>
+    </div>
     {% endif %}
   </div>
-</section>
+</div>
+{% endif %}
 {% endif %}
 
 <div class="wrap grid-wrap" id="news">
