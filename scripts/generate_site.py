@@ -14,7 +14,7 @@ GitHub Pages を "docs/" フォルダから配信する設定にしておけば�
 
 import csv
 import json
-from datetime import datetime, timezone
+from datetime import date, datetime, timezone
 from pathlib import Path
 
 from jinja2 import Environment, FileSystemLoader
@@ -48,6 +48,7 @@ def load_articles():
 
 
 def load_price_points():
+    """(date_str, value) のリストを日付昇順で返す。壊れた行は無視する。"""
     if not PRICE_LOG.exists():
         return []
     points = []
@@ -55,28 +56,79 @@ def load_price_points():
         reader = csv.reader(f)
         next(reader, None)  # header
         for row in reader:
-            if len(row) >= 2:
-                try:
-                    points.append((row[0], float(row[1])))
-                except ValueError:
-                    continue
-    points.sort(key=lambda p: p[0])
-    return points
+            if len(row) < 2:
+                continue
+            try:
+                d = date.fromisoformat(row[0])
+                v = float(row[1])
+            except ValueError:
+                continue
+            points.append((row[0], d, v))
+    points.sort(key=lambda p: p[1])
+    return [(d_str, v) for d_str, _d, v in points]
 
 
-def build_sparkline(points, width=300, height=60, pad=4):
+def format_date_ja(d_str):
+    d = date.fromisoformat(d_str)
+    return f"{d.year}年{d.month}月{d.day}日"
+
+
+def build_chart(points, width=760, height=200, pad_left=52, pad_right=16, pad_top=24, pad_bottom=28):
+    """
+    日付を実際の経過日数に比例させたx座標で折れ線を作る。
+    面塗り(グレーの塗りつぶし)はSaaS的な装飾でブランドの「罫線で語る」原則と
+    ズレるため使わない。代わりに横の目盛線(min/mid/max)と全記録点のドットで
+    「実データが積み上がっている」ことを見せる。
+    """
     if len(points) < 2:
         return None
-    values = [p[1] for p in points]
+
+    dates = [date.fromisoformat(d) for d, _ in points]
+    values = [v for _, v in points]
+
     lo, hi = min(values), max(values)
     span = (hi - lo) or 1.0
-    n = len(points)
-    coords = []
-    for i, v in enumerate(values):
-        x = pad + (width - 2 * pad) * (i / (n - 1))
-        y = height - pad - (height - 2 * pad) * ((v - lo) / span)
-        coords.append(f"{x:.1f},{y:.1f}")
-    return " ".join(coords)
+    t0, t1 = dates[0], dates[-1]
+    tspan = (t1 - t0).days or 1
+
+    def to_xy(d, v):
+        x = pad_left + (width - pad_left - pad_right) * ((d - t0).days / tspan)
+        y = height - pad_bottom - (height - pad_top - pad_bottom) * ((v - lo) / span)
+        return x, y
+
+    coords = [to_xy(d, v) for d, v in zip(dates, values)]
+    line_points = " ".join(f"{x:.1f},{y:.1f}" for x, y in coords)
+
+    dots = [{"x": x, "y": y} for x, y in coords]
+
+    min_i = values.index(lo)
+    max_i = values.index(hi)
+    mid_val = (lo + hi) / 2
+    mid_y = height - pad_bottom - (height - pad_top - pad_bottom) * 0.5
+
+    gridlines = [
+        {"y": height - pad_bottom, "label": f"${lo:,.0f}"},
+        {"y": mid_y, "label": f"${mid_val:,.0f}"},
+        {"y": pad_top, "label": f"${hi:,.0f}"},
+    ]
+
+    return {
+        "width": width,
+        "height": height,
+        "pad_left": pad_left,
+        "pad_right": pad_right,
+        "line_points": line_points,
+        "dots": dots,
+        "gridlines": gridlines,
+        "min_x": coords[min_i][0], "min_y": coords[min_i][1],
+        "max_x": coords[max_i][0], "max_y": coords[max_i][1],
+        "min_label": f"${lo:,.0f}",
+        "max_label": f"${hi:,.0f}",
+        "start_date": points[0][0],
+        "end_date": points[-1][0],
+        "start_date_ja": format_date_ja(points[0][0]),
+        "end_date_ja": format_date_ja(points[-1][0]),
+    }
 
 
 def next_volume():
@@ -115,6 +167,8 @@ def main():
         if prev:
             price_delta = (latest - prev) / prev * 100
 
+    chart = build_chart(price_points)
+
     env = Environment(loader=FileSystemLoader(str(TEMPLATE_DIR)))
     template = env.get_template("index.html.j2")
 
@@ -126,7 +180,7 @@ def main():
         others=others,
         price_points=price_points,
         price_delta=price_delta,
-        sparkline_points=build_sparkline(price_points),
+        chart=chart,
     )
 
     OUT_DIR.mkdir(parents=True, exist_ok=True)
