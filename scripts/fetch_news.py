@@ -73,7 +73,7 @@ def call_claude():
     client = anthropic.Anthropic()  # ANTHROPIC_API_KEY を環境変数から自動取得
     response = client.messages.create(
         model=MODEL,
-        max_tokens=4096,
+        max_tokens=8192,
         system=SYSTEM_PROMPT,
         messages=[
             {
