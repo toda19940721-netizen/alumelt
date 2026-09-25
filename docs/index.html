@@ -63,7 +63,17 @@
   .market-panel .cell-value { font-family:'Zen Kaku Gothic New',sans-serif; font-size:1.3rem; font-weight:700; }
   .market-panel .cell-sub { font-family:'Zen Kaku Gothic New',sans-serif; font-size:.76rem; color:var(--bronze); margin-top:4px; }
   .market-panel .spark-row { grid-column: 1 / -1; border-top:1px solid var(--rule); }
-  .sparkline { display:block; padding:14px 22px 18px; }
+  .chart-caption { display:flex; justify-content:space-between; align-items:baseline; padding:16px 22px 0; }
+  .chart-caption .title { font-family:'Zen Kaku Gothic New',sans-serif; font-size:.8rem; font-weight:700; color:var(--ink); }
+  .chart-caption .range { font-family:'Zen Kaku Gothic New',sans-serif; font-size:.72rem; color:var(--ink-soft); }
+  .chart-wrap { display:block; padding:8px 22px 18px; }
+  .chart-grid { stroke:var(--rule); stroke-width:1; stroke-dasharray:2 3; }
+  .chart-line { fill:none; stroke:var(--steel); stroke-width:2; }
+  .chart-dot { fill:var(--paper); stroke:var(--steel); stroke-width:1.5; }
+  .chart-dot.accent { stroke:var(--bronze); stroke-width:2; }
+  .chart-label { font-family:'Zen Kaku Gothic New',sans-serif; font-size:11px; fill:var(--ink-soft); }
+  .chart-label.value { fill:var(--bronze); font-weight:700; }
+  .chart-label.grid { fill:var(--ink-soft); }
   @media (max-width:640px) { .market-panel .spark-row { border-top:none; } }
 
   @media (max-width:640px) {
@@ -107,7 +117,7 @@
     <div class="masthead-inner">
       <div class="wordmark">アルミ<span>メルト</span></div>
       <div class="masthead-meta">
-        <div class="vol">Vol. 004</div>
+        <div class="vol">Vol. 005</div>
         <div>2026.09.25 更新</div>
       </div>
     </div>
@@ -131,9 +141,9 @@
       <span class="badge steel">地政学</span>
       <span class="lead-date">2026-09-23</span>
     </div>
-    <h1 class="lead-headline">米商務省、アルミ缶用素材を関税対象から一部除外</h1>
-    <p class="lead-deck"><cite index="68-1">米商務省は2026年9月23日、一般合金アルミシートに課されていた関税の対象からアルミ缶用素材(can stock)を除外する最終決定を公表した。</cite><cite index="68-3,68-6">ただし除外対象は厳格に規定されており、飲料缶の胴体・蓋・タブ用の板厚範囲や特定の調質基準を満たす場合に限られる。</cite></p>
-    <p class="lead-comment">適用要件は非常に細かく規定されており、該当性の誤判定は追加関税リスクにつながる点に注意したい。</p>
+    <h1 class="lead-headline">米、缶材アルミへの反ダンピング関税を撤回</h1>
+    <p class="lead-deck">米商務省は2026年9月23日、中国・バーレーン・ドイツ・ブラジルなど17カ国からの缶材用アルミに対する反ダンピング・相殺関税の撤回を最終決定した。撤回は米国内生産者団体自身の申請によるもので、中国製品には従来100％超の関税が課されていた。</p>
+    <p class="lead-comment">缶材の調達先選択肢が広がるため、コスト競争力のある海外供給元の再評価を進めたい。</p>
     <a class="lead-source" href="https://discoveryalert.com/analysis/us-aluminium-can-stock-duties-revoked-september-2026/" target="_blank" rel="noopener">元記事(Discovery Alert)を読む</a>
   </div>
 </section>
@@ -141,7 +151,7 @@
 <div class="wrap">
   <div class="market-panel">
     <div class="cell">
-      <div class="cell-label sans">LME 現物(cash bid)</div>
+      <div class="cell-label sans">LME 3ヶ月物(3-month)</div>
       <div class="cell-value">$3,290.0<span style="font-size:.75rem;font-weight:500;"> /t</span></div>
       
       <div class="cell-sub">前回比 +0.5%</div>
@@ -159,8 +169,39 @@
     </div>
     
     <div class="spark-row">
-      <svg class="sparkline" viewBox="0 0 300 60" width="100%" height="60" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="LMEアルミ価格の推移">
-        <polyline points="4.0,4.0 62.4,17.1 120.8,56.0 179.2,34.7 237.6,44.0 296.0,42.1" fill="none" stroke="var(--steel)" stroke-width="2"/>
+      <div class="chart-caption">
+        <span class="title sans">直近の値動き</span>
+        <span class="range">2026年6月9日 〜 2026年9月23日</span>
+      </div>
+      <svg class="chart-wrap" viewBox="0 0 760 200" width="100%" height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="LMEアルミ3ヶ月物価格の推移(2026-06-09〜2026-09-23)">
+        
+        <line class="chart-grid" x1="52" y1="172" x2="744" y2="172"/>
+        <text class="chart-label grid" x="44" y="176" text-anchor="end">$3,174</text>
+        
+        <line class="chart-grid" x1="52" y1="98.0" x2="744" y2="98.0"/>
+        <text class="chart-label grid" x="44" y="102.0" text-anchor="end">$3,391</text>
+        
+        <line class="chart-grid" x1="52" y1="24" x2="744" y2="24"/>
+        <text class="chart-label grid" x="44" y="28" text-anchor="end">$3,607</text>
+        
+        <polyline class="chart-line" points="52.0,24.0 65.1,61.3 345.8,172.0 652.6,111.4 665.7,138.0 744.0,132.5"/>
+        
+        <circle class="chart-dot" cx="52.0" cy="24.0" r="3"/>
+        
+        <circle class="chart-dot" cx="65.05660377358491" cy="61.29942196531792" r="3"/>
+        
+        <circle class="chart-dot" cx="345.7735849056604" cy="172.0" r="3"/>
+        
+        <circle class="chart-dot" cx="652.6037735849056" cy="111.43121387283236" r="3"/>
+        
+        <circle class="chart-dot" cx="665.6603773584906" cy="137.9514450867052" r="3"/>
+        
+        <circle class="chart-dot" cx="744.0" cy="132.47630057803468" r="3"/>
+        
+        <circle class="chart-dot accent" cx="52.0" cy="24.0" r="4"/>
+        <circle class="chart-dot accent" cx="345.7735849056604" cy="172.0" r="4"/>
+        <text class="chart-label value" x="52.0" y="14.0" text-anchor="middle">$3,607</text>
+        <text class="chart-label value" x="345.7735849056604" y="190.0" text-anchor="middle">$3,174</text>
       </svg>
     </div>
     
@@ -200,9 +241,9 @@
         <span class="tag-text">相場</span>
         <span class="date-text">2026-09-23</span>
       </div>
-      <h3>アルミ地金、供給逼迫で3,290ドル台に反発</h3>
-      <p><cite index="51-5,51-6">LME3か月物アルミニウム先物は1トン=3,290ドルまで上昇し、2週間安値からの反発を強めた。中東情勢の影響で域内生産が前年比44%減となっている。</cite><cite index="51-8">LME在庫は36年ぶりの低水準付近にとどまり、上海先物(SHFE)の在庫も減少を続け、現物需給の逼迫を示している。</cite>一方で米ドル高が上値を抑える要因となっている。</p>
-      <p class="comment">在庫逼迫と地政学リスクが併存する局面であり、調達担当者は先物カーブとプレミアム動向を注視したい。</p>
+      <h3>アルミ先物3290ドルに上昇、中東供給不安が支援</h3>
+      <p>LMEアルミ先物は供給逼迫を背景に反発し、直近安値から上昇して1トン3290ドル台となった。中東紛争によりGCC（湾岸協力会議）諸国の生産が前年比44％減少し、世界供給の一角を担う同地域の輸出が大幅に制約されている。</p>
+      <p class="comment">中東紛争の長期化リスクを踏まえ、湾岸産地金への依存度が高い調達先は代替調達先の確保を急ぐ必要があると考えられる。</p>
       <a class="source" href="https://tradingeconomics.com/commodity/aluminum" target="_blank" rel="noopener">元記事(Trading Economics)</a>
     </article>
     
@@ -215,6 +256,17 @@
       <p><cite index="41-1">米国では輸入依存が続く一方で、年間10億ドル相当のアルミ缶が埋立処分されているとの報告が公表された。</cite><cite index="41-2,41-4">AI廃棄物解析企業グレイパロットによれば、この廃棄量は年間約1,100万メガワット時のエネルギー損失に相当し、選別ライン到達分の89%は本来回収可能とされる。</cite></p>
       <p class="comment">国内スクラップ回収の高度化は、輸入プレミアム上昇局面での地金調達コスト低減策として実務上注目に値すると考えられる。</p>
       <a class="source" href="https://www.alcircle.com/news/us-aluminium-landfill-loss-can-become-domestic-supply-opportunity-says-waste-intelligence-firm-121292" target="_blank" rel="noopener">元記事(AL Circle)</a>
+    </article>
+    
+    <article class="story cat-sustain">
+      <div class="meta-row">
+        <span class="tag-text">サステナビリティ</span>
+        <span class="date-text">2026-09-23</span>
+      </div>
+      <h3>EU、アルミスクラップ輸出関税案を撤回</h3>
+      <p>欧州委員会は2026年9月、提案していたアルミスクラップへの15％輸出関税案を正式に撤回した。インドとの自由貿易協定締結への配慮が理由とされ、代わりの廃棄物規制案には業界から実効性への疑問も出ている。</p>
+      <p class="comment">欧州スクラップ需給の不透明感が続くため、再生地金の調達価格変動リスクを引き続き注視したい。</p>
+      <a class="source" href="https://discoveryalert.com/news/eu-aluminium-scrap-duty-axed-september-2026/" target="_blank" rel="noopener">元記事(Discovery Alert)</a>
     </article>
     
     <article class="story cat-invest">
@@ -244,9 +296,9 @@
         <span class="tag-text">イベント</span>
         <span class="date-text">2026-09-22</span>
       </div>
-      <h3>国際アルミニウム協会、NYC気候週間でリサイクル促進イベント開催</h3>
-      <p><cite index="40-6,40-7">国際アルミニウム協会(IAI)は2026年9月22日、ニューヨークで開催された気候週間(Climate Week NYC)にて、飲料缶バリューチェーン各社と共にリサイクル促進イベントを共催した。</cite><cite index="40-8">同イベントはリサイクルを環境課題としてだけでなく事業機会として位置づけ、投資・技術革新・業界連携による成長戦略を議論した。</cite></p>
-      <p class="comment">再生地金の供給拡大は輸入プレミアム上昇局面でのコスト分散策として実務的に有効と考えられる。</p>
+      <h3>国際アルミ協会、NY気候週間でリサイクル議論</h3>
+      <p>国際アルミニウム協会（IAI）は2026年9月22日、GBCCAと共同でニューヨークのClimate Week NYCに参加し、アルミリサイクルをビジネス機会として推進するイベントを開催した。米アルミニウム協会や缶メーカー協会も共催した。</p>
+      <p class="comment">リサイクル材の事業性訴求が国際的に強まっており、調達側もリサイクル材比率の開示要請増加を見据えておきたい。</p>
       <a class="source" href="https://international-aluminium.org/iai-at-climate-week-nyc-2026-the-business-case-for-recycling/" target="_blank" rel="noopener">元記事(International Aluminium Institute)</a>
     </article>
     
@@ -266,9 +318,9 @@
         <span class="tag-text">設備投資</span>
         <span class="date-text">2026-09-17</span>
       </div>
-      <h3>北米でアルミ製錬・アルミナ新増設プロジェクトが加速</h3>
-      <p><cite index="27-1,27-2">センチュリー・アルミナムとEGAが共同開発するオクラホマ州イノーラの新製錬所は年産75万トン規模で、総投資額は約40億ドルとされる。</cite><cite index="27-7,27-9">カナダではリオティントがケベック州のAP60製錬所拡張を進め、追加で年間約16万トンの一次アルミ生産能力を積み増す計画。</cite><cite index="27-11">米政府はルイジアナ州グラマーシーのアルミナ精錬所再稼働に4.5億ドルを拠出する方針。</cite></p>
-      <p class="comment">新設・再稼働が相次ぐが商業生産開始は数年先が多く、当面の需給逼迫緩和には直結しないと考えられる。</p>
+      <h3>北米アルミ産業、精錬・リサイクル投資が拡大</h3>
+      <p>米国政府がルイジアナ州Gramercyアルミナ精錬所の再稼働に4.5億ドルを拠出したほか、Century社はMt Holly製錬所の増強に5000万ドルを投資。Rio TintoはケベックのAP60製錬所拡張の稼働を進めている一方、Century・EGAのオクラホマ新設プロジェクトは建設遅延に直面している。</p>
+      <p class="comment">北米回帰投資は進むが新設プロジェクトの遅延も併存しており、供給計画の前提を都度アップデートする必要があると考えられる。</p>
       <a class="source" href="https://www.scrapmonster.com/news/aluminum/north-american-aluminium-industry-expands-capacity-in-2026-2026-9-17/100041" target="_blank" rel="noopener">元記事(ScrapMonster)</a>
     </article>
     
