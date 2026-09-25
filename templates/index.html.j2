@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>アルミノート — アルミニウム産業ニュースログ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=Zen+Old+Mincho:wght@400;600;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #EEEBE2; --paper: #FBFAF6; --ink: #171B21; --ink-soft: #5A5F63;
+    --rule: #D6D0C0; --rule-strong: #B6AF9C; --masthead: #12171E; --masthead-ink: #EFEDE6;
+    --bronze: #9A5326; --bronze-deep: #7B4019; --steel: #24455F; --steel-soft: #4C6E88; --brass: #A9863F;
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #14161A; --paper: #1B1E23; --ink: #EDEAE2; --ink-soft: #A19C90;
+      --rule: #33363B; --rule-strong: #454850; --masthead: #0B0D10; --masthead-ink: #EDEAE2;
+      --bronze: #D08A54; --bronze-deep: #E0A876; --steel: #7FA3C0; --steel-soft: #4C6E88; --brass: #C9A968;
+    }
+  }
+  html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font-family:'Zen Old Mincho',serif; font-size:17px; line-height:1.9; -webkit-font-smoothing:antialiased; }
+  .sans { font-family:'Zen Kaku Gothic New', sans-serif; }
+  a { color: inherit; }
+  .wrap { max-width: 900px; margin: 0 auto; padding: 0 24px; }
+
+  .masthead { background: var(--masthead); color: var(--masthead-ink); }
+  .masthead-inner { display:flex; justify-content:space-between; align-items:flex-end; padding:30px 0 20px; border-bottom:2px solid var(--brass); }
+  .wordmark { font-family:'Zen Kaku Gothic New',sans-serif; font-weight:900; font-size:1.85rem; letter-spacing:.03em; }
+  .wordmark span { color: var(--brass); }
+  .masthead-meta { text-align:right; font-family:'Zen Kaku Gothic New',sans-serif; font-size:.78rem; color:#B9B4A8; line-height:1.6; }
+  .masthead-meta .vol { color: var(--masthead-ink); font-weight:500; }
+  .subline { padding:12px 0 16px; font-family:'Zen Kaku Gothic New',sans-serif; font-size:.86rem; color:#B9B4A8; }
+
+  nav.cats { background: var(--paper); border-bottom:1px solid var(--rule-strong); }
+  nav.cats .wrap { display:flex; gap:26px; overflow-x:auto; padding:13px 24px; font-family:'Zen Kaku Gothic New',sans-serif; font-size:.84rem; }
+  nav.cats a { text-decoration:none; color: var(--ink-soft); white-space:nowrap; }
+  nav.cats a:hover { color: var(--bronze); }
+
+  .lead { padding:52px 0 36px; display:grid; grid-template-columns:1.35fr 1fr; gap:40px; align-items:center; border-bottom:1px solid var(--rule); }
+  .lead .meta-row { display:flex; align-items:center; gap:12px; margin-bottom:16px; }
+  .badge { display:inline-block; font-family:'Zen Kaku Gothic New',sans-serif; font-size:.72rem; font-weight:700; padding:4px 10px; background:var(--bronze); color:#FBF7EF; letter-spacing:.02em; }
+  .badge.steel { background: var(--steel); }
+  .lead-date { font-family:'Zen Kaku Gothic New',sans-serif; font-size:.8rem; color:var(--ink-soft); }
+  h1.lead-headline { font-size:clamp(1.7rem,3.6vw,2.5rem); line-height:1.5; font-weight:900; margin:0 0 16px; letter-spacing:.01em; }
+  .lead-deck { color:var(--ink-soft); font-size:1rem; margin:0 0 10px; max-width:46ch; }
+  .lead-comment { font-family:'Zen Kaku Gothic New',sans-serif; font-size:.86rem; color:var(--bronze-deep); margin:0 0 18px; padding-left:12px; border-left:2px solid var(--brass); }
+  .lead-source { font-family:'Zen Kaku Gothic New',sans-serif; font-size:.82rem; text-decoration:none; color:var(--steel); border-bottom:1px solid var(--steel-soft); padding-bottom:2px; }
+
+  .market-panel { margin:34px 0 0; border:1px solid var(--rule-strong); background:var(--paper); display:grid; grid-template-columns:repeat(3,1fr); }
+  .market-panel .cell { padding:18px 22px; border-right:1px solid var(--rule); }
+  .market-panel .cell:last-child { border-right:none; }
+  .market-panel .cell-label { font-family:'Zen Kaku Gothic New',sans-serif; font-size:.72rem; color:var(--ink-soft); margin-bottom:8px; }
+  .market-panel .cell-value { font-family:'Zen Kaku Gothic New',sans-serif; font-size:1.3rem; font-weight:700; }
+  .market-panel .cell-sub { font-family:'Zen Kaku Gothic New',sans-serif; font-size:.76rem; color:var(--bronze); margin-top:4px; }
+  .sparkline { margin-top:14px; }
+
+  @media (max-width:720px) { .lead { grid-template-columns:1fr; padding-top:36px; } }
+  @media (max-width:640px) { .market-panel { grid-template-columns:1fr; } .market-panel .cell { border-right:none; border-bottom:1px solid var(--rule); } .market-panel .cell:last-child { border-bottom:none; } }
+
+  .section-head { padding:44px 0 6px; font-family:'Zen Kaku Gothic New',sans-serif; font-size:.9rem; font-weight:700; border-bottom:2px solid var(--ink); display:inline-block; }
+  .grid-wrap { padding-bottom:20px; }
+  .story-grid { display:grid; grid-template-columns:1fr 1fr; gap:0; margin-top:18px; }
+  .story { padding:26px 26px 26px 0; border-top:1px solid var(--rule); }
+  .story:nth-child(odd) { border-right:1px solid var(--rule); padding-right:26px; }
+  .story:nth-child(even) { padding-left:26px; }
+  .story .meta-row { display:flex; gap:10px; align-items:center; margin-bottom:10px; }
+  .tag-text { font-family:'Zen Kaku Gothic New',sans-serif; font-size:.72rem; font-weight:700; color:var(--steel); }
+  .story.cat-invest .tag-text, .story.cat-sustain .tag-text { color: var(--bronze); }
+  .story .date-text { font-family:'Zen Kaku Gothic New',sans-serif; font-size:.74rem; color:var(--ink-soft); }
+  .story h3 { font-family:'Zen Kaku Gothic New',sans-serif; font-size:1.02rem; font-weight:700; line-height:1.6; margin:0 0 10px; }
+  .story p { font-size:.95rem; color:var(--ink); margin:0 0 10px; }
+  .story .comment { font-family:'Zen Kaku Gothic New',sans-serif; font-size:.82rem; color:var(--bronze-deep); margin:0 0 12px; padding-left:10px; border-left:2px solid var(--rule-strong); }
+  .story .source { font-family:'Zen Kaku Gothic New',sans-serif; font-size:.78rem; text-decoration:none; color:var(--ink-soft); border-bottom:1px solid var(--rule-strong); }
+  .story .source:hover { color: var(--steel); border-color: var(--steel); }
+  @media (max-width:640px) { .story-grid { grid-template-columns:1fr; } .story:nth-child(odd){border-right:none;padding-right:0;} .story:nth-child(even){padding-left:0;} }
+
+  .colophon { margin-top:40px; border-top:3px double var(--rule-strong); padding:34px 0 30px; display:grid; grid-template-columns:1fr 1fr; gap:30px; }
+  .colophon h4 { font-family:'Zen Kaku Gothic New',sans-serif; font-size:.82rem; margin:0 0 10px; color:var(--ink-soft); }
+  .colophon p { font-size:.92rem; color:var(--ink-soft); margin:0 0 8px; }
+  @media (max-width:640px) { .colophon { grid-template-columns:1fr; } }
+
+  footer { background:var(--masthead); color:#97927F; font-family:'Zen Kaku Gothic New',sans-serif; font-size:.76rem; padding:22px 0 calc(30px + env(safe-area-inset-bottom, 0px)); }
+  footer .wrap { display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px; }
+</style>
+</head>
+<body>
+
+<div class="masthead">
+  <div class="wrap">
+    <div class="masthead-inner">
+      <div class="wordmark">アルミ<span>ノート</span></div>
+      <div class="masthead-meta">
+        <div class="vol">Vol. {{ volume }}</div>
+        <div>{{ generated_date }} 更新</div>
+      </div>
+    </div>
+    <div class="subline">アルミニウム産業の一次情報を追う、AI駆動の個人ニュースログ</div>
+  </div>
+</div>
+
+<nav class="cats">
+  <div class="wrap">
+    {% for c in categories %}<a href="#news">{{ c }}</a>{% endfor %}
+    <a href="#about">このサイトについて</a>
+  </div>
+</nav>
+
+{% if lead %}
+<section class="lead wrap" id="lead">
+  <div>
+    <div class="meta-row">
+      <span class="badge {{ 'steel' if lead.category in ['相場','地政学'] else '' }}">{{ lead.category }}</span>
+      <span class="lead-date">{{ lead.date or '日付不明' }}</span>
+    </div>
+    <h1 class="lead-headline">{{ lead.title_ja }}</h1>
+    <p class="lead-deck">{{ lead.summary_ja }}</p>
+    {% if lead.comment_ja %}<p class="lead-comment">{{ lead.comment_ja }}</p>{% endif %}
+    <a class="lead-source" href="{{ lead.source_url }}" target="_blank" rel="noopener">元記事({{ lead.source_name }})を読む</a>
+  </div>
+  <div>
+    {% if price_points and price_points|length > 0 %}
+    <div class="market-panel">
+      <div class="cell">
+        <div class="cell-label sans">LME 現物(cash bid)</div>
+        <div class="cell-value">${{ '{:,.1f}'.format(price_points[-1][1]) }}<span style="font-size:.75rem;font-weight:500;"> /t</span></div>
+        {% if price_delta is not none %}
+        <div class="cell-sub">前回比 {{ '+' if price_delta >= 0 else '' }}{{ '%.1f'|format(price_delta) }}%</div>
+        {% endif %}
+      </div>
+      <div class="cell">
+        <div class="cell-label sans">記録日</div>
+        <div class="cell-value" style="font-size:1rem;">{{ price_points[-1][0] }}</div>
+        <div class="cell-sub sans" style="color:var(--ink-soft);">出典: AL Circle ほか</div>
+      </div>
+      <div class="cell">
+        <div class="cell-label sans">記録件数</div>
+        <div class="cell-value" style="font-size:1rem;">{{ price_points|length }} 件</div>
+        <div class="cell-sub sans" style="color:var(--ink-soft);">継続ログ中</div>
+      </div>
+    </div>
+    {% if sparkline_points %}
+    <svg class="sparkline" viewBox="0 0 300 60" width="100%" height="60" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="LMEアルミ価格の推移">
+      <polyline points="{{ sparkline_points }}" fill="none" stroke="var(--steel)" stroke-width="2"/>
+    </svg>
+    {% endif %}
+    {% endif %}
+  </div>
+</section>
+{% endif %}
+
+<div class="wrap grid-wrap" id="news">
+  <div class="section-head">その他のニュース</div>
+  <div class="story-grid">
+    {% for a in others %}
+    <article class="story cat-{{ a.category_slug }}">
+      <div class="meta-row">
+        <span class="tag-text">{{ a.category }}</span>
+        <span class="date-text">{{ a.date or '日付不明' }}</span>
+      </div>
+      <h3>{{ a.title_ja }}</h3>
+      <p>{{ a.summary_ja }}</p>
+      {% if a.comment_ja %}<p class="comment">{{ a.comment_ja }}</p>{% endif %}
+      <a class="source" href="{{ a.source_url }}" target="_blank" rel="noopener">元記事({{ a.source_name }})</a>
+    </article>
+    {% endfor %}
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="colophon" id="about">
+    <div>
+      <h4 class="sans">このサイトについて</h4>
+      <p>YouTubeで配信予定のアルミニウム業界解説チャンネル用に、動画の元ネタをAIが自動収集・要約している個人アーカイブです。一次情報の要約に留め、詳細は各記事のリンク先で確認してください。</p>
+    </div>
+    <div>
+      <h4 class="sans">扱うカテゴリ</h4>
+      <p>{{ categories|join('・') }}の5分野を中心に、AIが毎回自動でニュースを選定・追記しています。</p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <span>アルミノート — AI駆動の個人ニュースログ</span>
+    <span>最終更新: {{ generated_date }}</span>
+  </div>
+</footer>
+
+</body>
+</html>

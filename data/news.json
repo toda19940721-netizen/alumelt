@@ -1,0 +1,52 @@
+[
+  {
+    "category": "地政学",
+    "date": "2026-09-01",
+    "title_ja": "中東情勢の緊迫化で地金価格が4年ぶり高値圏に",
+    "summary_ja": "中東地域の地政学的リスクの高まりを背景に、アルミニウム価格がここ数年でもっとも高い水準まで上昇。供給網の分断懸念が強まっている。欧州・湾岸・北米では低炭素アルミの新規生産能力(年間16万トン規模)への投資も並行して進んでいる。",
+    "comment_ja": "調達側としては、価格上昇局面での長期契約の比率と在庫方針を見直すタイミングと考えられる。",
+    "source_name": "Aluminyum Yapı",
+    "source_url": "https://www.aluminyumyapi.com/en/haberler/kuresel-aluminyum-sektorunde-yeni-donem-avrupa-korfez-ve-kuzey-amerika-arasinda-stratejik-hamleler_405",
+    "fetched_at": "2026-09-25T00:00:00+00:00"
+  },
+  {
+    "category": "相場",
+    "date": "2026-09-09",
+    "title_ja": "LMEアルミ現物、続伸で3,353ドル/tに",
+    "summary_ja": "ロンドン金属取引所(LME)のアルミニウム価格が9月9日に上昇。現物の買い気配・売り気配とも前日から値を上げ、売り気配は1トンあたり3,353ドルとなった一方、倉庫在庫量には大きな動きが見られなかった。",
+    "comment_ja": "在庫が横ばいのまま価格だけ上がっている局面は、需給よりも思惑主導の可能性がある点に注意したい。",
+    "source_name": "AL Circle",
+    "source_url": "https://www.alcircle.com/news/lme-aluminium-cash-offer-rises-0-84-to-3-353-t-stocks-remain-unchanged-at-244-525t-121122",
+    "fetched_at": "2026-09-25T00:00:00+00:00"
+  },
+  {
+    "category": "イベント",
+    "date": "2026-10-06",
+    "title_ja": "世界最大級の見本市「ALUMINIUM 2026」、デュッセルドルフで開幕へ",
+    "summary_ja": "業界最大級の国際見本市がドイツで10月6〜8日に開催される。800を超える出展社と2万人規模の来場者が見込まれ、押出・圧延から表面処理、リサイクル、ソフトウェアまでバリューチェーン全体が集結する。",
+    "comment_ja": "現地に行けなくても、出展社リストから自社の商流に関係しそうな技術トレンドは追っておきたい。",
+    "source_name": "BBR News",
+    "source_url": "https://bbr.news/en?p=18991",
+    "fetched_at": "2026-09-25T00:00:00+00:00"
+  },
+  {
+    "category": "設備投資",
+    "date": "2026-06-29",
+    "title_ja": "ガーナに約300億円規模のアルミ箔工場、Danieliと覚書締結",
+    "summary_ja": "ガーナのアルミニウム開発公社(GIADEC)が、イタリアの設備大手Danieliと約3億ユーロ規模のアルミ箔生産設備建設で覚書を締結。アフリカにおける川下加工能力拡大の動きとして注目される。",
+    "comment_ja": "アフリカ発の川下加工能力が育つと、中長期的には地金〜半製品の調達ルートが多様化する可能性がある。",
+    "source_name": "Aluminium International Today",
+    "source_url": "https://aluminiumtoday.com/news/p8",
+    "fetched_at": "2026-09-25T00:00:00+00:00"
+  },
+  {
+    "category": "サステナビリティ",
+    "date": "2026-07-12",
+    "title_ja": "欧州でリサイクル能力40万トン増設、年間需要800万トンが土台に",
+    "summary_ja": "欧州の年間800万トン規模のアルミ需要を背景に、新たに40万トン分のリサイクル能力が構築されつつあると業界メディアが分析。スクラップ由来アルミの活用は原料調達の観点でも重要テーマになりそうだ。",
+    "comment_ja": "スクラップ相場・品質基準の変化は、自社のスクラップ調達方針にも波及しうるので継続的に見ておきたい。",
+    "source_name": "AL Circle",
+    "source_url": "https://www.alcircle.com/blog/tag/aluminium-industry-events-2026",
+    "fetched_at": "2026-09-25T00:00:00+00:00"
+  }
+]
