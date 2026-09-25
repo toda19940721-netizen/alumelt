@@ -21,13 +21,14 @@
   },
   {
     "category": "相場",
-    "date": "2026-09-23",
-    "title_ja": "LMEアルミ、供給逼迫で3290ドルまで反発",
-    "summary_ja": "英国のアルミニウム先物は1トン=3290ドルまで上昇し、2週間ぶりの安値から反発した。中東情勢による供給混乱とタイトな需給環境が価格を下支えしている。",
-    "comment_ja": "中東発の供給不安が長期化する場合、調達コストの上振れリスクを織り込んだヘッジ戦略の再点検が必要と考えられる。",
+    "date": "2026-09-24",
+    "title_ext": null,
+    "title_ja": "アルミ価格、中東供給不安で高止まり継続",
+    "summary_ja": "LMEアルミニウム先物は2026年9月24日にトン当たり3,256ドル前後で推移し、中東情勢による供給懸念が価格を下支えしている。湾岸協力会議(GCC)加盟国の生産は7月に前年比44%減少し、LME在庫は36年ぶりの低水準付近で推移している。",
+    "comment_ja": "在庫逼迫と地政学リスクが併存する局面であり、調達契約の価格改定タイミングには注意したい。",
     "source_name": "Trading Economics",
     "source_url": "https://tradingeconomics.com/commodity/aluminum",
-    "fetched_at": "2026-09-25T06:33:14.142095+00:00"
+    "fetched_at": "2026-09-25T06:56:18.012409+00:00"
   },
   {
     "category": "設備投資",
@@ -51,6 +52,16 @@
   },
   {
     "category": "地政学",
+    "date": "2026-09-18",
+    "title_ja": "米オクラホマ製錬所計画、地元自治体が建設凍結延長",
+    "summary_ja": "トランプ政権が推進するオクラホマ州の大型アルミ製錬所建設計画（総額40億ドル、EGAとセンチュリー・アルミニウム主導）を巡り、地元イノラ市議会は建設許可のモラトリアムを2027年4月まで延長し、住民投票の実施を決定した。両社は司法手続き中の投票実施に不服を表明している。",
+    "comment_ja": "米国内での新規製錬能力立ち上げは供給多様化の鍵だが、地元合意形成の長期化リスクを注視したい。",
+    "source_name": "Reuters (via MINING.COM)",
+    "source_url": "https://www.mining.com/web/whats-next-for-trumps-aluminum-smelter-project-in-oklahoma/",
+    "fetched_at": "2026-09-25T06:56:18.012423+00:00"
+  },
+  {
+    "category": "地政学",
     "date": "2026-09-15",
     "title_ja": "中国のアルミ生産、8月に過去最高 年間上限迫る",
     "summary_ja": "中国のアルミニウム生産量は8月に前年同月比4.7%増となり過去最高を記録、年初来の累計は3100万トンを超えた。中東情勢による世界的な供給不足を埋めるべく増産が進み、政府の年間生産上限（約4500万トン）に近づきつつある。",
@@ -58,6 +69,16 @@
     "source_name": "Bloomberg",
     "source_url": "https://www.bloomberg.com/news/articles/2026-09-15/china-s-aluminum-output-hits-record-as-government-limit-looms",
     "fetched_at": "2026-09-25T05:09:44.060964+00:00"
+  },
+  {
+    "category": "イベント",
+    "date": "2026-09-13",
+    "title_ja": "第20回アルミニウム合金国際会議ICAA20、ベルリンで開催",
+    "summary_ja": "アルミニウム合金分野の国際会議「ICAA20」が2026年9月13日から17日にかけてドイツ・ベルリンで開催され、オンライン併催の形式で研究者・技術者による最新知見が共有された。",
+    "comment_ja": "合金開発や軽量化技術の最新動向は自動車・航空向け調達仕様の検討材料になり得ると考えられる。",
+    "source_name": "日本アルミニウム協会",
+    "source_url": "https://www.aluminum.or.jp/topics_old/",
+    "fetched_at": "2026-09-25T06:56:18.012429+00:00"
   },
   {
     "category": "サステナビリティ",
@@ -88,6 +109,16 @@
     "source_name": "Aluminyum Yapı",
     "source_url": "https://www.aluminyumyapi.com/en/haberler/kuresel-aluminyum-sektorunde-yeni-donem-avrupa-korfez-ve-kuzey-amerika-arasinda-stratejik-hamleler_405",
     "fetched_at": "2026-09-25T00:00:00+00:00"
+  },
+  {
+    "category": "サステナビリティ",
+    "date": "2026-08-24",
+    "title_ja": "ノルスク・ハイドロ、スタットクラフトと再エネPPA締結",
+    "summary_ja": "ノルスク・ハイドロは2026年8月24日、スタットクラフトとの間で2031年から2040年までの10年間、年間876GWhを供給する電力購入契約（PPA）を締結したと発表された。欧州製錬所の電力調達安定化と脱炭素化を両立させる動きの一環である。",
+    "comment_ja": "長期再エネPPAは製錬コストの安定化に寄与し、低炭素アルミ調達を検討する需要家には注目材料と言える。",
+    "source_name": "Tacto（Fastmarkets引用）",
+    "source_url": "https://www.tacto.ai/en/commodities/aluminium-price",
+    "fetched_at": "2026-09-25T06:56:18.012428+00:00"
   },
   {
     "category": "設備投資",
