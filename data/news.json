@@ -1,13 +1,64 @@
 [
   {
-    "category": "地政学",
-    "date": "2026-09-01",
-    "title_ja": "中東情勢の緊迫化で地金価格が4年ぶり高値圏に",
-    "summary_ja": "中東地域の地政学的リスクの高まりを背景に、アルミニウム価格がここ数年でもっとも高い水準まで上昇。供給網の分断懸念が強まっている。欧州・湾岸・北米では低炭素アルミの新規生産能力(年間16万トン規模)への投資も並行して進んでいる。",
-    "comment_ja": "調達側としては、価格上昇局面での長期契約の比率と在庫方針を見直すタイミングと考えられる。",
-    "source_name": "Aluminyum Yapı",
-    "source_url": "https://www.aluminyumyapi.com/en/haberler/kuresel-aluminyum-sektorunde-yeni-donem-avrupa-korfez-ve-kuzey-amerika-arasinda-stratejik-hamleler_405",
+    "category": "イベント",
+    "date": "2026-10-06",
+    "title_ja": "世界最大級の見本市「ALUMINIUM 2026」、デュッセルドルフで開幕へ",
+    "summary_ja": "業界最大級の国際見本市がドイツで10月6〜8日に開催される。800を超える出展社と2万人規模の来場者が見込まれ、押出・圧延から表面処理、リサイクル、ソフトウェアまでバリューチェーン全体が集結する。",
+    "comment_ja": "現地に行けなくても、出展社リストから自社の商流に関係しそうな技術トレンドは追っておきたい。",
+    "source_name": "BBR News",
+    "source_url": "https://bbr.news/en?p=18991",
     "fetched_at": "2026-09-25T00:00:00+00:00"
+  },
+  {
+    "category": "イベント",
+    "date": "2026-10-06",
+    "title_ja": "隔年開催「ALUMINIUM 2026」がデュッセルドルフで開幕",
+    "summary_ja": "世界最大級のアルミニウム業界専門展示会「ALUMINIUM」が10月6日から8日までドイツ・デュッセルドルフで開催される。押出加工・熱処理・表面処理・自動化などバリューチェーン全体の技術が出展される見込み。",
+    "comment_ja": "AIやサステナビリティをテーマにした講演も予定されており、調達・技術動向の最新情報収集の好機になると考えられる。",
+    "source_name": "tradefairdates.com",
+    "source_url": "https://www.tradefairdates.com/ALUMINIUM-M314/Duesseldorf.html",
+    "fetched_at": "2026-09-25T05:09:44.060962+00:00"
+  },
+  {
+    "category": "相場",
+    "date": "2026-09-23",
+    "title_ex": null,
+    "title_ja": "アルミ先物、中東供給不安で3290ドルに反発",
+    "summary_ja": "英LMEのアルミニウム先物が1トン=3290ドルまで上昇し、2週間ぶり安値からの反発を強めた。中東情勢によるガルフ地域の供給減とドル高が相場を支えている。",
+    "comment_ja": "GCC地域の生産減少とLME在庫の低水準が続く限り、当面はプレミアム含め高値圏での調達が続くと考えられる。",
+    "source_name": "Trading Economics",
+    "source_url": "https://tradingeconomics.com/commodity/aluminum",
+    "fetched_at": "2026-09-25T05:09:44.060943+00:00"
+  },
+  {
+    "category": "設備投資",
+    "date": "2026-09-22",
+    "title_ja": "ギリシャMetlen、再生アルミ設備に2500万ユーロ投資",
+    "summary_ja": "ギリシャのMetlen Energy & Metalsは、再生アルミニウム生産拠点EP.AL.ME.向けに自動選別・処理・溶解設備の導入を目的とした2500万ユーロの投資を発表した。稼働完了後は生産量を25万トン超に引き上げる計画。",
+    "comment_ja": "EUの重要原材料法やCBAM対応を見据えた二次地金増強の動きとして、欧州向け低炭素アルミ調達先の選択肢拡大につながると考えられる。",
+    "source_name": "Investing.com",
+    "source_url": "https://jp.investing.com/news/company-news/article-93CH-1687311",
+    "fetched_at": "2026-09-25T05:09:44.060959+00:00"
+  },
+  {
+    "category": "地政学",
+    "date": "2026-09-15",
+    "title_ja": "中国のアルミ生産、8月に過去最高 年間上限迫る",
+    "summary_ja": "中国のアルミニウム生産量は8月に前年同月比4.7%増となり過去最高を記録、年初来の累計は3100万トンを超えた。中東情勢による世界的な供給不足を埋めるべく増産が進み、政府の年間生産上限（約4500万トン）に近づきつつある。",
+    "comment_ja": "上限接近により年後半の中国からの輸出余力が縮小する可能性があり、代替供給ソースの確保を注視したい。",
+    "source_name": "Bloomberg",
+    "source_url": "https://www.bloomberg.com/news/articles/2026-09-15/china-s-aluminum-output-hits-record-as-government-limit-looms",
+    "fetched_at": "2026-09-25T05:09:44.060964+00:00"
+  },
+  {
+    "category": "サステナビリティ",
+    "date": "2026-09-11",
+    "title_ja": "EU、アルミスクラップ輸出関税案を撤回",
+    "summary_ja": "欧州委員会は印EU自由貿易協定の署名を複雑にする懸念から、検討していたアルミスクラップの輸出関税案を撤回した。関税に代わり、非OECD諸国向け廃棄物輸出を制限する規則の活用を進める方針。",
+    "comment_ja": "関税撤回によりアジア向けスクラップ流出圧力は残るとみられ、欧州製二次地金の調達コストや量への影響を注意したい。",
+    "source_name": "MINING.COM",
+    "source_url": "https://www.mining.com/web/eu-dropped-aluminium-scrap-duty-plan-over-india-concerns-sources-say",
+    "fetched_at": "2026-09-25T05:09:44.060966+00:00"
   },
   {
     "category": "相場",
@@ -20,23 +71,13 @@
     "fetched_at": "2026-09-25T00:00:00+00:00"
   },
   {
-    "category": "イベント",
-    "date": "2026-10-06",
-    "title_ja": "世界最大級の見本市「ALUMINIUM 2026」、デュッセルドルフで開幕へ",
-    "summary_ja": "業界最大級の国際見本市がドイツで10月6〜8日に開催される。800を超える出展社と2万人規模の来場者が見込まれ、押出・圧延から表面処理、リサイクル、ソフトウェアまでバリューチェーン全体が集結する。",
-    "comment_ja": "現地に行けなくても、出展社リストから自社の商流に関係しそうな技術トレンドは追っておきたい。",
-    "source_name": "BBR News",
-    "source_url": "https://bbr.news/en?p=18991",
-    "fetched_at": "2026-09-25T00:00:00+00:00"
-  },
-  {
-    "category": "設備投資",
-    "date": "2026-06-29",
-    "title_ja": "ガーナに約300億円規模のアルミ箔工場、Danieliと覚書締結",
-    "summary_ja": "ガーナのアルミニウム開発公社(GIADEC)が、イタリアの設備大手Danieliと約3億ユーロ規模のアルミ箔生産設備建設で覚書を締結。アフリカにおける川下加工能力拡大の動きとして注目される。",
-    "comment_ja": "アフリカ発の川下加工能力が育つと、中長期的には地金〜半製品の調達ルートが多様化する可能性がある。",
-    "source_name": "Aluminium International Today",
-    "source_url": "https://aluminiumtoday.com/news/p8",
+    "category": "地政学",
+    "date": "2026-09-01",
+    "title_ja": "中東情勢の緊迫化で地金価格が4年ぶり高値圏に",
+    "summary_ja": "中東地域の地政学的リスクの高まりを背景に、アルミニウム価格がここ数年でもっとも高い水準まで上昇。供給網の分断懸念が強まっている。欧州・湾岸・北米では低炭素アルミの新規生産能力(年間16万トン規模)への投資も並行して進んでいる。",
+    "comment_ja": "調達側としては、価格上昇局面での長期契約の比率と在庫方針を見直すタイミングと考えられる。",
+    "source_name": "Aluminyum Yapı",
+    "source_url": "https://www.aluminyumyapi.com/en/haberler/kuresel-aluminyum-sektorunde-yeni-donem-avrupa-korfez-ve-kuzey-amerika-arasinda-stratejik-hamleler_405",
     "fetched_at": "2026-09-25T00:00:00+00:00"
   },
   {
@@ -47,6 +88,16 @@
     "comment_ja": "スクラップ相場・品質基準の変化は、自社のスクラップ調達方針にも波及しうるので継続的に見ておきたい。",
     "source_name": "AL Circle",
     "source_url": "https://www.alcircle.com/blog/tag/aluminium-industry-events-2026",
+    "fetched_at": "2026-09-25T00:00:00+00:00"
+  },
+  {
+    "category": "設備投資",
+    "date": "2026-06-29",
+    "title_ja": "ガーナに約300億円規模のアルミ箔工場、Danieliと覚書締結",
+    "summary_ja": "ガーナのアルミニウム開発公社(GIADEC)が、イタリアの設備大手Danieliと約3億ユーロ規模のアルミ箔生産設備建設で覚書を締結。アフリカにおける川下加工能力拡大の動きとして注目される。",
+    "comment_ja": "アフリカ発の川下加工能力が育つと、中長期的には地金〜半製品の調達ルートが多様化する可能性がある。",
+    "source_name": "Aluminium International Today",
+    "source_url": "https://aluminiumtoday.com/news/p8",
     "fetched_at": "2026-09-25T00:00:00+00:00"
   }
 ]
