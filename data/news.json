@@ -12,23 +12,22 @@
   {
     "category": "イベント",
     "date": "2026-10-06",
-    "title_ja": "隔年開催「ALUMINIUM 2026」がデュッセルドルフで開幕",
-    "summary_ja": "世界最大級のアルミニウム業界専門展示会「ALUMINIUM」が10月6日から8日までドイツ・デュッセルドルフで開催される。押出加工・熱処理・表面処理・自動化などバリューチェーン全体の技術が出展される見込み。",
-    "comment_ja": "AIやサステナビリティをテーマにした講演も予定されており、調達・技術動向の最新情報収集の好機になると考えられる。",
+    "title_ja": "国際見本市「ALUMINIUM 2026」がデュッセルドルフで開幕",
+    "summary_ja": "世界最大級のアルミニウム産業見本市「ALUMINIUM」が10月6日から8日までドイツ・デュッセルドルフで開催される。押出・圧延・鋳造・熱処理・リサイクルなど、川上から川下までのバリューチェーン全体をカバーする内容となる見込み。",
+    "comment_ja": "最新の脱炭素・リサイクル技術動向を把握する好機であり、調達戦略の見直しに向けた情報収集の場として活用したい。",
     "source_name": "tradefairdates.com",
     "source_url": "https://www.tradefairdates.com/ALUMINIUM-M314/Duesseldorf.html",
-    "fetched_at": "2026-09-25T05:09:44.060962+00:00"
+    "fetched_at": "2026-09-26T00:21:02.329373+00:00"
   },
   {
-    "category": "相場",
+    "category": "地政学",
     "date": "2026-09-23",
-    "title_ea": null,
-    "title_ja": "アルミ先物3290ドルに上昇、中東供給不安が支援",
-    "summary_ja": "LMEアルミ先物は供給逼迫を背景に反発し、直近安値から上昇して1トン3290ドル台となった。中東紛争によりGCC（湾岸協力会議）諸国の生産が前年比44％減少し、世界供給の一角を担う同地域の輸出が大幅に制約されている。",
-    "comment_ja": "中東紛争の長期化リスクを踏まえ、湾岸産地金への依存度が高い調達先は代替調達先の確保を急ぐ必要があると考えられる。",
+    "title_ja": "中東戦争でGCCアルミ生産44%減、供給網に打撃",
+    "summary_ja": "中東の戦争により地域からの供給が混乱し、ホルムズ海峡経由の輸送が大きく制約された結果、GCC地域のアルミ生産は7月に前年比44%減少した。同地域は戦前、世界のアルミ供給の約1割を占めていた。",
+    "comment_ja": "中東依存度の高い調達先は、有事対応としてサプライヤーの地理的分散を再点検する必要があると考えられる。",
     "source_name": "Trading Economics",
     "source_url": "https://tradingeconomics.com/commodity/aluminum",
-    "fetched_at": "2026-09-25T11:11:23.823564+00:00"
+    "fetched_at": "2026-09-26T00:21:02.329366+00:00"
   },
   {
     "category": "地政学",
@@ -62,6 +61,16 @@
   },
   {
     "category": "設備投資",
+    "date": "2026-09-23",
+    "title_ja": "アゼルバイジャン、新規20万トン級製錬所を計画",
+    "summary_ja": "アゼルバイジャンは年産20万トン規模の新しいアルミニウム製錬所の建設を計画しており、外国投資家の関心を集めている。既存のAzeraluminium社ガンジャ工場についても、2030年までに電解能力を現行の約5万トンから10万トンへ倍増させる方針。",
+    "comment_ja": "中央アジア・南コーカサス地域が新たな製錬拠点として台頭すれば、中長期的な地金調達先の選択肢が広がると考えられる。",
+    "source_name": "Shanghai Metals Market (SMM)",
+    "source_url": "https://news.metal.com/newscontent/104131653-metlen-invests-%E2%82%AC25m-in-greek-recycled-aluminum-plant-boosting-scrap-processing-and-integration",
+    "fetched_at": "2026-09-26T00:21:02.329371+00:00"
+  },
+  {
+    "category": "設備投資",
     "date": "2026-09-22",
     "title_ja": "ギリシャMetlen、再生アルミ設備に2500万ユーロ投資",
     "summary_ja": "ギリシャのMetlen Energy & Metalsは、再生アルミニウム生産拠点EP.AL.ME.向けに自動選別・処理・溶解設備の導入を目的とした2500万ユーロの投資を発表した。稼働完了後は生産量を25万トン超に引き上げる計画。",
@@ -89,6 +98,16 @@
     "source_name": "International Aluminium Institute",
     "source_url": "https://international-aluminium.org/iai-at-climate-week-nyc-2026-the-business-case-for-recycling/",
     "fetched_at": "2026-09-25T11:11:23.823583+00:00"
+  },
+  {
+    "category": "設備投資",
+    "date": "2026-09-22",
+    "title_ja": "METLEN、ギリシャの再生アルミ工場に25百万ユーロ投資",
+    "summary_ja": "METLEN Energy & MetalsはギリシャのEP.AL.ME.施設に約25百万ユーロを投資し、より複雑なスクラップの処理能力を拡大する。同社は再生アルミと一次生産（Aluminium of Greece）の統合を深める狙いがあり、両拠点の合計生産能力は25万トンを超える見込み。",
+    "comment_ja": "再生地金と一次地金の一体運用が進めば、欧州域内での高品質スクラップ需要が一段と強まると考えられる。",
+    "source_name": "AskTraders",
+    "source_url": "https://www.asktraders.com/analysis/metlen-invests-e25-million-to-expand-recycled-aluminium-capacity",
+    "fetched_at": "2026-09-26T00:21:02.329369+00:00"
   },
   {
     "category": "地政学",
