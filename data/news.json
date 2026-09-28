@@ -21,6 +21,16 @@
   },
   {
     "category": "相場",
+    "date": "2026-09-25",
+    "title_ja": "LMEアルミ、供給逼迫で3281ドルへ上昇",
+    "summary_ja": "<cite index=\"66-1\">2026年9月25日、LMEアルミニウム価格は前日比0.78％高の1トン3281.50ドルまで上昇した。</cite><cite index=\"66-3\">中東での紛争によりホルムズ海峡経由の出荷が混乱し、湾岸協力会議（GCC）地域の生産は7月時点で前年比44％減少した。</cite><cite index=\"66-8\">LME在庫は36年ぶりの低水準付近で推移し、上海先物取引所（SHFE）在庫も減少が続いている。</cite>",
+    "comment_ja": "在庫が歴史的低水準にある局面のため、短期的な価格急変リスクを織り込んだ調達計画の見直しに注意したい。",
+    "source_name": "Trading Economics",
+    "source_url": "https://tradingeconomics.com/commodity/aluminum",
+    "fetched_at": "2026-09-28T00:17:39.073478+00:00"
+  },
+  {
+    "category": "相場",
     "date": "2026-09-24",
     "title_ex_ja": null,
     "title_ja": "中国アルミ地金在庫、国慶節前に急減少",
@@ -29,16 +39,6 @@
     "source_name": "Discovery Alert",
     "source_url": "https://discoveryalert.com/analysis/china-aluminium-inventory-cycle-september-2026/",
     "fetched_at": "2026-09-27T00:09:37.480276+00:00"
-  },
-  {
-    "category": "地政学",
-    "date": "2026-09-23",
-    "title_ja": "中東情勢の混乱でアルミ相場が続伸",
-    "summary_ja": "英LMEアルミ先物は約2週間ぶり安値からの反発を続け1トン3,290ドルまで上昇した。中東情勢によりホルムズ海峡経由の出荷が制約を受け、湾岸諸国（GCC）の生産量は7月に前年比44%減少するなど供給逼迫が続いている。",
-    "comment_ja": "湾岸地域は世界生産の約1割を占めるため、地政学リスクが長期化すれば地金調達コストに直結する可能性がある。",
-    "source_name": "Trading Economics",
-    "source_url": "https://tradingeconomics.com/commodity/aluminum",
-    "fetched_at": "2026-09-27T00:09:37.480293+00:00"
   },
   {
     "category": "地政学",
@@ -152,6 +152,26 @@
   },
   {
     "category": "イベント",
+    "date": "2026-09-15",
+    "title_ja": "国際アルミニウム会議、ブダペストで開催",
+    "summary_ja": "<cite index=\"11-2\">Fastmarkets主催の国際アルミニウム会議が2026年9月15日から17日にかけてハンガリーのブダペストで開催された。</cite>関税やCBAM、リサイクル原料価格などが主要議題となった。",
+    "comment_ja": "業界最新の関税・規制動向を把握する場であり、調達戦略見直しのヒントが得られると考えられる。",
+    "source_name": "Fastmarkets",
+    "source_url": "https://www.fastmarkets.com/metals-and-mining/base-metals/aluminium/",
+    "fetched_at": "2026-09-28T00:17:39.073498+00:00"
+  },
+  {
+    "category": "サステナビリティ",
+    "date": "2026-09-15",
+    "title_ja": "EU、アルミスクラップ輸出規制案を撤回",
+    "summary_ja": "<cite index=\"49-2\">欧州委員会が二次アルミニウム（スクラップ）の輸出に貿易制限を導入する提案を撤回する決定を、業界団体リサイクリング・ヨーロッパが歓迎した。</cite><cite index=\"49-7\">同団体はこの決定が欧州アルミバリューチェーン全体の競争力強化に向けた建設的な対話の機会を開くと指摘している。</cite>",
+    "comment_ja": "スクラップ輸出規制の撤回でコスト上昇懸念は後退したが、代替の廃棄物規則の行方には引き続き注意したい。",
+    "source_name": "GMK Center",
+    "source_url": "https://gmk.center/en/news/the-european-commission-has-scrapped-restrictions-on-the-export-of-aluminium-scrap/",
+    "fetched_at": "2026-09-28T00:17:39.073500+00:00"
+  },
+  {
+    "category": "イベント",
     "date": "2026-09-13",
     "title_ja": "第20回アルミニウム合金国際会議ICAA20、ベルリンで開催",
     "summary_ja": "アルミニウム合金分野の国際会議「ICAA20」が2026年9月13日から17日にかけてドイツ・ベルリンで開催され、オンライン併催の形式で研究者・技術者による最新知見が共有された。",
@@ -171,6 +191,16 @@
     "fetched_at": "2026-09-25T06:33:14.142118+00:00"
   },
   {
+    "category": "設備投資",
+    "date": "2026-09-11",
+    "title_ja": "欧州製錬所が相次ぎ稼働再開・業界再編",
+    "summary_ja": "<cite index=\"65-6\">欧州のアルミ製錬能力の回復が進んでおり、アルコアのサンシプリアンは全面稼働に復帰し、ハイドロはスロバルコを、センチュリーはノルデュラルをそれぞれ再稼働させた。またアルバはアルミニウム・ダンケルクを買収した。</cite>",
+    "comment_ja": "欧州の供給回復はプレミアム縮小要因になり得るため、年間契約の価格交渉タイミングに注意したい。",
+    "source_name": "Tacto（Fastmarkets引用）",
+    "source_url": "https://www.tacto.ai/en/commodities/aluminium-price",
+    "fetched_at": "2026-09-28T00:17:39.073496+00:00"
+  },
+  {
     "category": "相場",
     "date": "2026-09-09",
     "title_ja": "LMEアルミ現物、続伸で3,353ドル/tに",
@@ -179,16 +209,6 @@
     "source_name": "AL Circle",
     "source_url": "https://www.alcircle.com/news/lme-aluminium-cash-offer-rises-0-84-to-3-353-t-stocks-remain-unchanged-at-244-525t-121122",
     "fetched_at": "2026-09-25T00:00:00+00:00"
-  },
-  {
-    "category": "サステナビリティ",
-    "date": "2026-09-07",
-    "title_ja": "EU、アルミスクラップの非OECD国輸出を禁止へ",
-    "summary_ja": "欧州委員会は当初検討していたアルミスクラップ輸出に対する15%の関税案を撤回し、代わりに廃棄物輸送規則に基づく委任法によりアルミスクラップ（CN 7602）の非OECD諸国向け輸出を禁止する方針に転換した。採択は2026年12月を目標としている。",
-    "comment_ja": "採択されれば欧州域内のスクラップ調達競争が激化し、二次地金の域外流出抑制でリサイクル業者のコスト構造にも影響し得る。",
-    "source_name": "Fastmarkets（Tacto.ai経由）",
-    "source_url": "https://www.tacto.ai/en/commodities/aluminium-price",
-    "fetched_at": "2026-09-27T00:09:37.480296+00:00"
   },
   {
     "category": "地政学",
@@ -239,5 +259,15 @@
     "source_name": "Aluminium International Today",
     "source_url": "https://aluminiumtoday.com/",
     "fetched_at": "2026-09-25T06:33:14.142114+00:00"
+  },
+  {
+    "category": "地政学",
+    "date": null,
+    "title_ja": "ギニア鉱業権移管でEGA原料供給に懸念",
+    "summary_ja": "<cite index=\"8-1\">ギニアの軍事政府が全ての鉱業権を新たに設立された国営企業に移管した後、主要生産者エミレーツグローバルアルミニウム（EGA）への鉱石供給を停止する可能性が浮上した。これは、南32がモザンビークのモザル製錬所を電力確保の問題により閉鎖すると発表した直後の動きである。</cite>",
+    "comment_ja": "ボーキサイト調達の地政学リスクが顕在化しており、代替調達先の分散検討が急務と考えられる。",
+    "source_name": "Trading Economics（日本語版）",
+    "source_url": "https://jp.tradingeconomics.com/commodity/aluminum",
+    "fetched_at": "2026-09-28T00:17:39.073493+00:00"
   }
 ]
