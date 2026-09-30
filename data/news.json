@@ -21,6 +21,16 @@
   },
   {
     "category": "相場",
+    "date": "2026-09-29",
+    "title_ja": "中国アルミ加工業PMI、9月に53.9%へ急回復",
+    "summary_ja": "中国のアルミニウム加工業界の総合PMIは9月に53.9%となり、8月の48.7%から大幅に改善して2カ月ぶりに好不況の境目である50を上回った。業界は「弱い回復」から「構造的拡大」局面へ移行した一方、業種間のばらつきは拡大している。",
+    "comment_ja": "川下加工業の急回復は地金需要の下支え要因となり得るが、業種間格差の拡大にも注意が必要と考えられる。",
+    "source_name": "SMM (Shanghai Metals Market)",
+    "source_url": "https://news.metal.com/newscontent/104140032-aluminum-processing-pmi-expands-in-september-sector-divergence-grows-october-sentiment-to-moderate-smm-analysis",
+    "fetched_at": "2026-09-30T01:00:39.134437+00:00"
+  },
+  {
+    "category": "相場",
     "date": "2026-09-25",
     "title_ja": "LMEアルミ、供給逼迫で3281ドルへ上昇",
     "summary_ja": "<cite index=\"66-1\">2026年9月25日、LMEアルミニウム価格は前日比0.78％高の1トン3281.50ドルまで上昇した。</cite><cite index=\"66-3\">中東での紛争によりホルムズ海峡経由の出荷が混乱し、湾岸協力会議（GCC）地域の生産は7月時点で前年比44％減少した。</cite><cite index=\"66-8\">LME在庫は36年ぶりの低水準付近で推移し、上海先物取引所（SHFE）在庫も減少が続いている。</cite>",
@@ -28,6 +38,26 @@
     "source_name": "Trading Economics",
     "source_url": "https://tradingeconomics.com/commodity/aluminum",
     "fetched_at": "2026-09-28T00:17:39.073478+00:00"
+  },
+  {
+    "category": "相場",
+    "date": "2026-09-25",
+    "title_ja": "LMEアルミ現物、9月25日に3,253ドルへ上昇",
+    "summary_ja": "LME（ロンドン金属取引所）のアルミニウム現物（キャッシュビッド）価格は9月25日、前日の3,227ドルから0.80%上昇し1トン当たり3,253ドルとなった。3カ月先物やアジア参考価格も上昇した一方、キャンセル済みワラントは34.5%急増した。",
+    "comment_ja": "キャンセルワラント急増は近い将来の受渡集中や現物逼迫の予兆とも読め、スポット調達コストの上振れに注意したい。",
+    "source_name": "AL Circle",
+    "source_url": "https://www.alcircle.com/news/lme-aluminium-cash-bid-rises-to-3-253-t-as-asian-reference-price-gains-0-55-on-september-25-121331",
+    "fetched_at": "2026-09-30T01:00:39.134413+00:00"
+  },
+  {
+    "category": "地政学",
+    "date": "2026-09-25",
+    "title_ja": "インドネシア国富ファンド、資源大手と提携協議",
+    "summary_ja": "インドネシアの国富ファンド、ダナンタラは9月25日、中国系CITICリソーシズや国営MIND ID、国営アルミ大手INALUMとの提携を検討していると明らかにした。資本・鉱物資源・インフラの3分野での協力強化が焦点。",
+    "comment_ja": "資源保有国側の垂直統合が進めば、原料アルミナ・地金調達における交渉力バランスへの影響が生じ得ると考えられる。",
+    "source_name": "SMM (Shanghai Metals Market)",
+    "source_url": "https://news.metal.com/newscontent/104137588-new-aluminium-project-updates-continue-to-emerge-while-commissioning-schedules-for-ongoing-projects-face-delays",
+    "fetched_at": "2026-09-30T01:00:39.134436+00:00"
   },
   {
     "category": "相場",
@@ -119,6 +149,16 @@
     "source_name": "AskTraders",
     "source_url": "https://www.asktraders.com/analysis/metlen-invests-e25-million-to-expand-recycled-aluminium-capacity",
     "fetched_at": "2026-09-26T00:21:02.329369+00:00"
+  },
+  {
+    "category": "設備投資",
+    "date": "2026-09-22",
+    "title_ja": "アルバ、仏ダンケルク製錬所買収を継続推進と表明",
+    "summary_ja": "バーレーンのアルミニウム大手アルバは9月22日の取締役会で、EU最大の一次アルミ製錬所であるアルミニウム・ダンケルクの買収手続きを進めていると報告した。同案件は約22億ドル規模で、残る規制当局の承認取得が課題となっている。",
+    "comment_ja": "大手製錬所同士の統合は欧州の低炭素アルミ供給網再編を象徴し、調達先集約による価格交渉力の変化にも留意したい。",
+    "source_name": "SMM (Shanghai Metals Market)",
+    "source_url": "https://news.metal.com/newscontent/104137312-smm-flash-news-lme-aluminum-inventories-flat-on-sep-25",
+    "fetched_at": "2026-09-30T01:00:39.134434+00:00"
   },
   {
     "category": "地政学",
