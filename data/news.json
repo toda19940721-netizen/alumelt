@@ -20,6 +20,16 @@
     "fetched_at": "2026-09-26T00:21:02.329373+00:00"
   },
   {
+    "category": "イベント",
+    "date": "2026-10-06",
+    "title_ja": "独デュッセルドルフで「ALUMINIUM 2026」開幕",
+    "summary_ja": "世界最大級のアルミニウム産業展示会「ALUMINIUM 2026」が2026年10月6日から8日まで、ドイツ・デュッセルドルフ国際見本市会場で開催される。原料・半製品から加工機械、表面処理まで幅広い分野の企業が出展する、2年に1度の国際見本市。",
+    "comment_ja": "最新の低炭素・リサイクル技術動向を把握する好機であり、サプライヤー発掘にも活用したい。",
+    "source_name": "OpenEXPO",
+    "source_url": "https://www.open-expo.net/detail/189",
+    "fetched_at": "2026-10-01T01:02:38.960506+00:00"
+  },
+  {
     "category": "相場",
     "date": "2026-09-29",
     "title_ja": "中国アルミ加工業PMI、9月に53.9%へ急回復",
@@ -28,6 +38,26 @@
     "source_name": "SMM (Shanghai Metals Market)",
     "source_url": "https://news.metal.com/newscontent/104140032-aluminum-processing-pmi-expands-in-september-sector-divergence-grows-october-sentiment-to-moderate-smm-analysis",
     "fetched_at": "2026-09-30T01:00:39.134437+00:00"
+  },
+  {
+    "category": "相場",
+    "date": "2026-09-29",
+    "title_ja": "LMEアルミ急落、3,213ドル台に下落",
+    "summary_ja": "2026年9月29日、LMEアルミニウム3カ月物は前日比34.5ドル安の3,213.5ドル/トンで引け、9月10日につけた直近高値(約3,360ドル)から約147ドル下落した。米消費者信頼感指数の12.5年ぶり低水準や利上げ観測の高まりが売り材料となった。",
+    "comment_ja": "急落局面での調達は価格の底打ちタイミング見極めが重要で、中国国慶節休暇前後の値動きにも注意したい。",
+    "source_name": "Discovery Alert",
+    "source_url": "https://discoveryalert.com/analysis/aluminium-market-outlook-selloff-september-2026/",
+    "fetched_at": "2026-10-01T01:02:38.960482+00:00"
+  },
+  {
+    "category": "サステナビリティ",
+    "date": "2026-09-28",
+    "title_ja": "HydroとCHANELが低炭素アルミで戦略提携",
+    "summary_ja": "ノルウェーのHydroと仏CHANEL Fragrance and Beautyは、香水・化粧品向けパッケージ用に低炭素アルミニウムを開発する戦略的パートナーシップを締結した。2026〜2030年のロードマップの下、2030年までにCO2排出量をアルミ1kgあたり約3.0kgに削減することを目指す。",
+    "comment_ja": "高級ブランドが低炭素地金を指定する動きは今後、川下の調達基準にも波及する可能性がある。",
+    "source_name": "AL Circle",
+    "source_url": "https://www.alcircle.com/news/press-release/hydro-signs-strategic-partnership-with-chanel-fragrance-and-beauty-to-accelerate-the-development-of-low-carbon-aluminium-121339",
+    "fetched_at": "2026-10-01T01:02:38.960504+00:00"
   },
   {
     "category": "相場",
@@ -181,14 +211,24 @@
     "fetched_at": "2026-09-25T11:11:23.823580+00:00"
   },
   {
+    "category": "設備投資",
+    "date": "2026-09-17",
+    "title_ja": "北米でアルミ製錬・精錬・低炭素技術に投資拡大",
+    "summary_ja": "北米のアルミニウム業界では2026年、製錬・アルミナ精錬・リサイクル・低炭素技術にわたり大型投資が進行中。カナダ政府はELYSISの不活性陽極技術に1億カナダドルを拠出したほか、米国唯一の稼働中アルミナ精錬所であるグラマシー工場への投資や、非ボーキサイト由来アルミナ開発のソーアプロジェクトも進展している。",
+    "comment_ja": "新規製錬所が実現すれば1980年以来の米国内新設となり、北米調達網の多様化につながる可能性がある。",
+    "source_name": "ScrapMonster",
+    "source_url": "https://www.scrapmonster.com/news/aluminum/north-american-aluminum-industry-boosts-capacity-in-2026-2026-9-17/100041",
+    "fetched_at": "2026-10-01T01:02:38.960502+00:00"
+  },
+  {
     "category": "地政学",
     "date": "2026-09-15",
-    "title_ja": "中国アルミ生産、中東供給不足補い過去最高に",
-    "summary_ja": "中国のアルミニウム生産は中東の戦争による世界的な供給不足を埋めるため急増し、8月の生産量は前年比4.7%増の約400万トンと過去最高を記録した。年初来の生産量は3,100万トンを超え、政府が設定する年間生産上限の約4,500万トンに迫りつつある。",
-    "comment_ja": "中国の増産余地は生産上限との兼ね合いで限定的であり、上限接近が供給制約要因として再燃するリスクに留意したい。",
+    "title_ja": "中国アルミ生産が過去最高、上限枠に接近",
+    "summary_ja": "中国のアルミニウム生産は8月に前年比4.7%増の約400万トン弱と過去最高を記録し、年初来では3,100万トンを超えた。中東情勢による世界的な供給不足を背景に製錬各社が増産を急いだ結果、政府が定める年間生産能力上限(約4,500万トン)への到達が視野に入っている。",
+    "comment_ja": "上限到達が現実味を帯びる中、中国からの供給増加余地は限定的と見ておきたい。",
     "source_name": "Bloomberg",
     "source_url": "https://www.bloomberg.com/news/articles/2026-09-15/china-s-aluminum-output-hits-record-as-government-limit-looms",
-    "fetched_at": "2026-09-27T00:09:37.480295+00:00"
+    "fetched_at": "2026-10-01T01:02:38.960498+00:00"
   },
   {
     "category": "イベント",
